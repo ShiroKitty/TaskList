@@ -1,0 +1,49 @@
+/* button {
+    width: 100%;
+} */
+
+body{
+    background-color: #DEE6D9;
+}
+
+h2 {
+    background-color: #436252;
+    color: #DEE6D9;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Items list */
+li {
+    font-size: 20px;
+    list-style: none;
+    padding-left: 20px;
+}
+.customLi{
+    border-bottom: 2px solid #436252;
+}
+li:hover {
+    background-color: #82A585;
+    cursor: default;
+}
+
+/*  Buttons  */
+button {
+    background-color: #436252;
+    color: #DEE6D9;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: #82A585;
+}
+
+/* Add Items Form*/
+label {
+    font-size: 20px;
+}
+#addBtn{
+    margin: auto;
+    display: block;
+}

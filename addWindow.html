@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Add Item</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link rel="stylesheet" href="soStylish.css">
+    </head>
+    <body>
+        <form>
+            <div>
+                <label>Enter Item</label>
+                <input type="text" id="item" autofocus>
+                <button type="submit" id="addBtn">Add Item</button>
+            </div>
+            
+        </form>
+
+        <script>
+            const electron = require('electron');
+            const {ipcRenderer} = electron;
+
+            const form = document.querySelector('form');
+            form.addEventListener('submit', submitForm);
+
+            function submitForm(event){
+                event.preventDefault();
+                console.log('Add item form running');
+
+                const item = document.querySelector('#item').value;
+                ipcRenderer.send('addItem', item);
+            }
+        </script>
+    </body>
+</html>
