@@ -65,21 +65,19 @@ const myMenu = [
     {
         label: 'File',
         submenu: [
-            { 
-                label: 'Open',
-                click(){
-                    var json = require('json-file');
-                    json.read
-                }
-            },
-            { 
-                label: 'Save',
-                click(){
-                    
-                    var x = Document.GetElementById("programList");
+            // { /* Couldn't figure out how to implement this in menu template -
+            //      left here so I can play with it later   */
+            //     label: 'Open',
+            //     click(){
 
-                }
-            },
+            //     }
+            // },
+            // { 
+            //     label: 'Save',
+            //     click() {
+                    
+            //     }
+            // },
             { 
                 label : 'Exit',
                 role: 'close'
